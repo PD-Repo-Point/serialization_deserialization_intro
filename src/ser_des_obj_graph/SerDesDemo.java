@@ -17,7 +17,7 @@ public class SerDesDemo {
         ObjectInputStream objectInputStream = new ObjectInputStream(fileInputStream);
         Employee empl = (Employee)objectInputStream.readObject();
 
-        // All the classes should implement Serializable class
+        // All the classes should implement Serializable 
         System.out.println(empl.trainer.student.number_of_session);
 
     }
